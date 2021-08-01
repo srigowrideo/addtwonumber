@@ -1,0 +1,17 @@
+NAME Addition
+PAGE 52,80
+TITLE 8086 assembly language program to add two numbers.
+model small
+stack 100
+data
+ No1        DB    63H
+ No1        DB    2EH
+ Result     DW   ?
+ code
+ START:  MOV AX,@data
+ MOV   DS,AX
+ MOV   AL,NO1
+ MOV   AL,NO2
+ ADC   AH,00H
+ MOV  Result,AX
+ END  START
